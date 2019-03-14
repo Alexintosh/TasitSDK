@@ -24,7 +24,8 @@
     "test": "npm run setup:local && npm run mocha",
     "test:forked-testnet": "npm run setup:forked-ropsten && npm run mocha",
     "mocha": "npx mocha src/*.test.js  --require @babel/register --file src/testHelpers/mochaSetup.js --no-timeouts",
-    "lint": "npx prettier src/* --write"
+    "lint": "npx prettier src/* --write",
+    "simple:test": "npx mocha src/simple.test.js  --require @babel/register --no-timeouts"
   },
   "bugs": {
     "url": "https://github.com/tasitlabs/tasitsdk/issues"
@@ -43,6 +44,7 @@
     "@babel/register": "^7.0.0",
     "chai": "^4.2.0",
     "ethers": "^4.0.27",
-    "mocha": "^6.0.1"
+    "mocha": "^6.0.1",
+    "web3": "^1.0.0-beta.48"
   }
 }
